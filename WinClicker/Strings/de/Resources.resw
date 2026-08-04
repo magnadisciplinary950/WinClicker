@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ClickCoordinatesExpander.Header" xml:space="preserve">
+    <value>Klickkoordinaten</value>
+  </data>
+  <data name="ClickCoordinatesExpander_ClickLocationComboBox.Header" xml:space="preserve">
+    <value>Klickposition</value>
+  </data>
+  <data name="ClickCoordinatesExpander_ClickLocationComboBox_CurrentMouseLocationComboBoxItem.Content" xml:space="preserve">
+    <value>Aktuelle Mausposition</value>
+  </data>
+  <data name="ClickCoordinatesExpander_ClickLocationComboBox_CustomCoordinatesComboBoxItem.Content" xml:space="preserve">
+    <value>Benutzerdefinierte Koordinaten</value>
+  </data>
+  <data name="ClickCoordinatesExpander_PickCoordinatesButton.Text" xml:space="preserve">
+    <value>Punkt wählen</value>
+  </data>
+  <data name="ClickCoordinatesExpander_TeleportButton.Text" xml:space="preserve">
+    <value>Teleportieren</value>
+  </data>
+  <data name="ClickCoordinatesExpander_XCoordinateTextBox.Header" xml:space="preserve">
+    <value>X‐Koordinate</value>
+  </data>
+  <data name="ClickCoordinatesExpander_YCoordinateTextBox.Header" xml:space="preserve">
+    <value>Y‐Koordinate</value>
+  </data>
+  <data name="ClickIntervalExpander.Header" xml:space="preserve">
+    <value>Klickintervall</value>
+  </data>
+  <data name="ClickIntervalExpander_HoursTextBox.Header" xml:space="preserve">
+    <value>Stunden</value>
+  </data>
+  <data name="ClickIntervalExpander_MillisecondsTextBox.Header" xml:space="preserve">
+    <value>Millisekunden</value>
+  </data>
+  <data name="ClickIntervalExpander_MinutesTextBox.Header" xml:space="preserve">
+    <value>Minuten</value>
+  </data>
+  <data name="ClickIntervalExpander_SecondsTextBox.Header" xml:space="preserve">
+    <value>Sekunden</value>
+  </data>
+  <data name="ClickOptionsExpander.Header" xml:space="preserve">
+    <value>Klickoptionen</value>
+  </data>
+  <data name="ClickOptionsExpander_ClickTypeComboBox.Header" xml:space="preserve">
+    <value>Klicktyp</value>
+  </data>
+  <data name="ClickOptionsExpander_ClickTypeComboBox_DoubleComboBoxItem.Content" xml:space="preserve">
+    <value>Doppelklick</value>
+  </data>
+  <data name="ClickOptionsExpander_ClickTypeComboBox_SingleComboBoxItem.Content" xml:space="preserve">
+    <value>Einfachklick</value>
+  </data>
+  <data name="ClickOptionsExpander_MouseButtonComboBox.Header" xml:space="preserve">
+    <value>Maustaste</value>
+  </data>
+  <data name="ClickOptionsExpander_MouseButtonComboBox_LeftComboBoxItem.Content" xml:space="preserve">
+    <value>Links</value>
+  </data>
+  <data name="ClickOptionsExpander_MouseButtonComboBox_MiddleComboBoxItem.Content" xml:space="preserve">
+    <value>Mittel</value>
+  </data>
+  <data name="ClickOptionsExpander_MouseButtonComboBox_RightComboBoxItem.Content" xml:space="preserve">
+    <value>Rechts</value>
+  </data>
+  <data name="HotkeySettingsExpander.Header" xml:space="preserve">
+    <value>Hotkey‐Einstellungen</value>
+  </data>
+  <data name="HotkeySettingsExpander_HotkeySyntaxButton.AutomationProperties.Name" xml:space="preserve">
+    <value>Hotkey‐Syntax</value>
+  </data>
+  <data name="HotkeySettingsExpander_HotkeySyntaxButton.ToolTipService.ToolTip" xml:space="preserve">
+    <value>Hotkey‐Syntax</value>
+  </data>
+  <data name="HotkeySettingsExpander_HotkeySyntaxTeachingTip.Title" xml:space="preserve">
+    <value>Hotkey‐Syntax</value>
+  </data>
+  <data name="HotkeySettingsExpander_StartStopHotkeyTextBlock.Text" xml:space="preserve">
+    <value>Start‐/Stopp‐Hotkey</value>
+  </data>
+  <data name="HotkeySettingsExpander_HotkeySyntaxTeachingTip_Alphanumeric.Text" xml:space="preserve">
+    <value>Alphanumerisch:</value>
+    <comment>Include the colon after the text (“:”).</comment>
+  </data>
+  <data name="HotkeySettingsExpander_HotkeySyntaxTeachingTip_Introduction.Text" xml:space="preserve">
+    <value>Nutze + zum Verbinden von Tasten (keine Leerzeichen). Beispiel: Ctrl+Shift+C</value>
+    <comment>The space between “Example:” and “Ctrl+Shift+C” is a non‐breaking space.</comment>
+  </data>
+  <data name="HotkeySettingsExpander_HotkeySyntaxTeachingTip_Modifiers.Text" xml:space="preserve">
+    <value>Modifikatoren:</value>
+    <comment>Include the colon after the text (“:”).</comment>
+  </data>
+  <data name="HotkeySettingsExpander_HotkeySyntaxTeachingTip_NavigationSpecial.Text" xml:space="preserve">
+    <value>Navigation &amp; Sonstiges:</value>
+    <comment>Include the colon after the text (“:”).</comment>
+  </data>
+  <data name="HotkeySettingsExpander_HotkeySyntaxTeachingTip_Numpad.Text" xml:space="preserve">
+    <value>Nummernblock:</value>
+    <comment>Include the colon and space after the text (“: ”).</comment>
+  </data>
+  <data name="Footer_StartButton.Text" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="Footer_StopButton.Text" xml:space="preserve">
+    <value>Stopp</value>
+  </data>
+  <data name="HotkeySettingsExpander_HotkeySyntaxTeachingTip_Notice.Text" xml:space="preserve">
+    <value>Änderungen werden übernommen, sobald das Textfeld nicht mehr fokussiert ist.</value>
+  </data>
+</root>

@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<WindowsPackageType>None</WindowsPackageType>
+		<WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
+		<SelfContained>true</SelfContained>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
+		<TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+		<RootNamespace>WinClicker</RootNamespace>
+		<ApplicationManifest>app.manifest</ApplicationManifest>
+		<Platforms>x64;ARM64</Platforms>
+		<RuntimeIdentifiers>win-x64;win-arm64</RuntimeIdentifiers>
+		<PublishProfile>win-$([MSBuild]::ValueOrDefault('$(Platform)','x64').ToLower()).pubxml</PublishProfile>
+		<UseWinUI>true</UseWinUI>
+		<EnableMsixTooling>true</EnableMsixTooling>
+		<EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+		<PublishSingleFile>true</PublishSingleFile>
+		<Nullable>enable</Nullable>
+		<ApplicationIcon>Assets\appicon.ico</ApplicationIcon>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<PublishReadyToRun Condition="'$(Configuration)' == 'Debug'">False</PublishReadyToRun>
+		<PublishReadyToRun Condition="'$(Configuration)' != 'Debug'">True</PublishReadyToRun>
+		<PublishTrimmed Condition="'$(Configuration)' == 'Debug'">False</PublishTrimmed>
+		<PublishTrimmed Condition="'$(Configuration)' != 'Debug'">True</PublishTrimmed>
+		<IncludeNativeLibrariesForSelfExtract Condition="'$(Configuration)' != 'Debug'">true</IncludeNativeLibrariesForSelfExtract>
+		<IncludeAllContentForSelfExtract Condition="'$(Configuration)' != 'Debug'">true</IncludeAllContentForSelfExtract>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+		<PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.28000.2526" />
+		<PackageReference Include="Microsoft.WindowsAppSDK" Version="2.3.1" />
+		<PackageReference Include="WinUIEx" Version="2.9.2" />
+	</ItemGroup>
+
+	<Target Name="HidePublishFiles" AfterTargets="Publish">
+		<Exec Condition="'$(Configuration)' == 'Release'" Command="powershell -Command &quot;Remove-Item -Path '$(PublishDir)*.pdb' -ErrorAction SilentlyContinue&quot;" />
+	</Target>
+
+	<Target Name="CopyThirdPartyNoticesToPublish" AfterTargets="Publish">
+		<Copy SourceFiles="$(MSBuildProjectDirectory)\..\THIRD-PARTY-NOTICES.md"
+			  DestinationFolder="$(PublishDir)"
+			  SkipUnchangedFiles="true" />
+	</Target>
+</Project>

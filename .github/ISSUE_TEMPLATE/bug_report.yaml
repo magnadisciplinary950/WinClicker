@@ -1,0 +1,126 @@
+name: Bug report 🐛
+description: Create a bug report to help us fix a demonstrable problem in WinClicker.
+title: "🐛 Bug: "
+labels: ["bug"]
+body:
+    - type: markdown
+      attributes:
+          value: |
+              Thanks for taking the time to report a bug in WinClicker.
+              A bug is a demonstrable problem caused by some code in this project.
+              Wrong category? Go back and choose a different template.
+
+    - type: textarea
+      id: description
+      attributes:
+          label: 📝 Describe the bug
+          description: |
+              Provide a clear and concise description of what the bug is.
+          placeholder: |
+              When clicking **Pick coordinates**, the pop‐up window doesn’t appear…
+      validations:
+          required: true
+
+    - type: textarea
+      id: steps
+      attributes:
+          label: 🔢 Steps to reproduce
+          description: |
+              Provide step‐by‐step instructions so we can reliably reproduce the issue.
+          placeholder: |
+              1. Open the WinClicker program.
+              2. Click the **Click coordinates** expander button.
+              3. Click on the **Pick coordinates** button inside the expander.
+      validations:
+          required: true
+
+    - type: textarea
+      id: expected
+      attributes:
+          label: ✅ Expected result
+          description: |
+              What did you expect to happen?
+          placeholder: |
+              The pop‐up window actually shows.
+      validations:
+          required: true
+
+    - type: textarea
+      id: actual
+      attributes:
+          label: ❌ Actual result
+          description: |
+              What actually happened instead?
+          placeholder: |
+              The pop‐up window never opened.
+      validations:
+          required: true
+
+    - type: input
+      id: sandbox
+      attributes:
+          label: 🧪 Test sandbox
+          description: |
+              Link to a minimal reproduction on the program itself or in a separate repository.
+              Bug reports with sandboxes have higher priority.
+          placeholder: https://github.com/my-username/my-test-sandbox
+      validations:
+          required: false
+
+    - type: textarea
+      id: screenshots
+      attributes:
+          label: 🖼️ Screenshots
+          description: |
+              If applicable, add screenshots to help explain the issue.
+      validations:
+          required: false
+
+    - type: input
+      id: winclicker-version
+      attributes:
+          label: 🔢 WinClicker version
+          description: Issues will be disregarded on unsupported versions of WinClicker.
+          placeholder: WinClicker v1.0.0
+      validations:
+          required: true
+
+    - type: dropdown
+      id: os
+      attributes:
+          label: 💻 Operating system
+          options:
+              - Windows 11
+              - Windows 10
+      validations:
+          required: true
+
+    - type: input
+      id: os-version
+      attributes:
+          label: 💻🔢 Operating system version
+          description: Issues will be disregarded on unsupported versions of Windows.
+          placeholder: Version 25H2 (Build 26200.8894)
+      validations:
+          required: true
+
+    - type: textarea
+      id: additional
+      attributes:
+          label: ℹ️ Additional information
+          description: |
+              Anything else that might help us debug the issue.
+      validations:
+          required: false
+
+    - type: checkboxes
+      id: confirmations
+      attributes:
+          label: ✅ Confirmations
+          options:
+              - label: I have searched for existing issues that describe this problem.
+                required: true
+              - label: I can reliably reproduce this issue.
+                required: true
+              - label: I am willing to submit a pull request for this.
+                required: false

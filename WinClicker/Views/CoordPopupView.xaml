@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UserControl
+    x:Class="WinClicker.Views.CoordPopupView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:WinClicker"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewModels="using:WinClicker.ViewModels"
+    d:DesignHeight="64"
+    d:DesignWidth="124"
+    Background="Transparent"
+    mc:Ignorable="d">
+    <Grid
+        HorizontalAlignment="Stretch"
+        VerticalAlignment="Center"
+        Background="Transparent"
+        ColumnSpacing="8"
+        CornerRadius="{StaticResource OverlayCornerRadius}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock
+            Grid.Row="0"
+            Grid.Column="0"
+            Margin="12,12,12,0"
+            Style="{StaticResource BodyStrongTextBlockStyle}"
+            Text="X" />
+        <TextBlock
+            x:Name="XValue"
+            Grid.Row="0"
+            Grid.Column="1"
+            Margin="0,12,12,0"
+            Style="{StaticResource BodyTextBlockStyle}"
+            Text="{x:Bind ViewModel.X, Mode=OneWay}"
+            Typography.NumeralAlignment="Tabular" />
+
+        <TextBlock
+            Grid.Row="1"
+            Grid.Column="0"
+            Margin="12,0,12,12"
+            Style="{StaticResource BodyStrongTextBlockStyle}"
+            Text="Y" />
+        <TextBlock
+            x:Name="YValue"
+            Grid.Row="1"
+            Grid.Column="1"
+            Margin="0,0,12,12"
+            Style="{StaticResource BodyTextBlockStyle}"
+            Text="{x:Bind ViewModel.Y, Mode=OneWay}"
+            Typography.NumeralAlignment="Tabular" />
+    </Grid>
+</UserControl>

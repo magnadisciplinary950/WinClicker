@@ -19,7 +19,7 @@ Entpacke den Inhalt in einen Ordner deiner Wahl und starte die darin enthaltene 
 
 Dies funktioniert möglicherweise nicht, wenn du [Smart App Control](https://learn.microsoft.com/de-de/windows/apps/develop/smart-app-control/overview) oder [AppLocker](https://learn.microsoft.com/de-de/windows/security/application-security/application-control/app-control-for-business/applocker/applocker-overview) verwendest, strenge Unternehmenseinstellungen vorgenommen hast oder dein Antivirenprogramm das Programm blockiert (füge in diesem Fall den entpackten Ordner zur Blocklist deines Antivirenprogramms hinzu).
 
-_Bewahre bitte die mitgelieferte [`THIRD-PARTY-NOTICES.md`](../THIRD-PARTY-NOTICES.md)‐Datei im selben Ordner wie die Anwendung auf.._
+_Bewahre bitte die mitgelieferte [`THIRD-PARTY-NOTICES.md`](../THIRD-PARTY-NOTICES.md)‐Datei im selben Ordner wie die Anwendung auf._
 
 ## 💻 Unterstützte Betriebssysteme
 

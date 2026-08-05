@@ -38,6 +38,6 @@ Dependencies are subject to their respective licences and may or may not use the
 
 ---
 
-© 2026 randomguy-2650 and its contributors
+© 2026 randomguy-2650 and his contributors
 
 _Building from source requires the Windows App SDK and required Visual Studio workloads._

